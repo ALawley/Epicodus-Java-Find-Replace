@@ -5,13 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class PROJECTIntegrationTest extends FluentTest {
+public class FindAndReplaceIntegrationTest extends FluentTest {
   public WebDriver webDriver = new HtmlUnitDriver();
   public WebDriver getDefaultDriver() {
       return webDriver;
   }
 
-  @ClassRule
-  public static ServerRule server = new ServerRule();
+  // @ClassRule
+  // public static ServerRule server = new ServerRule();
 
 }
