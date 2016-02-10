@@ -6,9 +6,11 @@ public class FindAndReplace {
   }
   public static String findReplace(String input, String toFind, String toReplace) {
     String[] phraseSplit = input.split(" ");
+    String lowerCaseFind = toFind.toLowerCase();
     for ( Integer i = 0; i < phraseSplit.length; i++) {
-      if (phraseSplit[i].equals(toFind)) {
-      phraseSplit[i] = phraseSplit[i].replace(toFind, toReplace);
+      String lowerCaseIndex = phraseSplit[i].toLowerCase();
+      if (lowerCaseIndex.equals(lowerCaseFind)) {
+      phraseSplit[i] = lowerCaseIndex.replace(toFind, toReplace);
       }
     }
     String finishedPhrase = "";
