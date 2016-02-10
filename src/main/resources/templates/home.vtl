@@ -1,0 +1,20 @@
+<h1>Find and Replace</h1>
+
+<p>Enter some text into the form below. Give us two words and we'll replace all instances of the first word with the second!</p>
+
+<form action='/results' method='get'>
+  <div class="form-group">
+    <label for="text">Your text:</label>
+    <input id="text" name="text" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="toFind">Replace all:</label>
+    <input id="toFind" name="toFind" class="form-control" type="text">
+  </div>
+  <div class="form-group">
+    <label for="toReplace">Replace with:</label>
+    <input id="toReplace" name="toReplace" class="form-control" type="text">
+  </div>
+
+  <button type="submit" class="btn btn-info">Replace my text!</button>
+</form>
